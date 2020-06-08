@@ -1,0 +1,129 @@
+// @import "~milligram";
+
+@page {
+  size: A4;
+  // padding: 10mm;
+
+  .experience {
+    page-break-inside: avoid;
+  }
+}
+
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+    /* margin: 20mm 20mm 20mm 20mm; */
+    /* change the margins as you want them to be. */
+  }
+
+  img {
+    float: right;
+    height: 3em;
+  }
+
+}
+
+a {
+  color: unset;
+}
+
+.page {
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0rem;
+  margin-bottom: 0.75rem;
+}
+
+
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin: 0;
+}
+
+.work-experience {
+  list-style: none;
+
+  div.timeline {
+    margin-bottom: .5em;
+    padding-left: 1em;
+    border-left-style: solid;
+    border-left-color: gray;
+    border-left-width: 5px;
+  }
+
+  .logo {
+    float: right;
+
+    img {
+      display: block;
+      height: 50px;
+      max-width: 150px;
+    }
+  }
+}
+
+ul.timeline {
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+ul.timeline section {
+  margin-bottom: .5em;
+  padding-left: 1em;
+  border-left-style: solid;
+  border-left-color: gray;
+  border-left-width: 5px;
+}
+
+
+.education {
+  list-style: none;
+}
+
+.skills {
+  flex: 2;
+  background: #eeeeee;
+  padding: 1.5rem;
+}
+
+.more-info {
+  flex: 3;
+  padding: 1.5rem;
+}
+
+.skill-set {
+  .level {
+    background-color: gray;
+    border-radius: 0.4rem;
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: 700;
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    float: right;
+  }
+
+  p {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+

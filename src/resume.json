@@ -1,0 +1,202 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Abdalkarim Akilan",
+    "label": "Full Stack Developer | Spring | Angular",
+    "picture": "",
+    "email": "",
+    "phone": "",
+    "website": "http://aboodz.dev",
+    "summary": "A dedicated and detail-oriented full stack software developer with over six years of hands-on experience building performant and user-friendly web applications. An enthusiastic learner who never stops seeking new knowledge. Skilled in modern web applications architecture and expert in various open-source backend technologies, front-end frameworks, and tools. Looking for an exciting opportunity to grow my career and expand my knowledge working in a technology-driven company.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Dubai",
+      "countryCode": "AE",
+      "region": "Dubai"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "aboodz",
+        "url": "https://github.com/aboodz"
+      },
+      {
+        "network": "Stackoverflow",
+        "username": "aboodz",
+        "url": "https://stackoverflow.com/users/3853283/aboodz"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "aboodz",
+        "url": "https://www.linkedin.com/in/aboodz/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Majid Al Futtaim",
+      "position": "Full Stack Developer - Payments",
+      "website": "https://majidalfuttaim.com",
+      "location": "Dubai, United Arab Emirates",
+      "description": "Majid Al Futtaim is the leading shopping mall, communities, retail and leisure pioneer across the Middle East, Africa and Asia.",
+      "startDate": "2018-12-04",
+      "summary": "Working as part of the core team to build MAF Payments, a Payment Gateway, that processes and settle payments from customers to merchants",
+      "highlights": [
+        "Leading the development of an Angular based PG (payment gateway) portal that supports merchants and other internal users.",
+        "Building several backend components including a WebFlux BFF (backend for frontend) component, a Serverless API Gateway, a non-blocking OAuth system.",
+        "Contributed in updating and migrating beam app components, a digital wallet application, and ensuring a smooth sunset plan.",
+        "Engaging in technical discussions with fellow developers and DevOps.",
+        "Mentoring junior developer and new team recruits to continuously improve their technical skills."
+      ]
+    },
+    {
+      "name": "Mondia",
+      "position": "Fullstack Developer",
+      "website": "https://mondia.com",
+      "location": "Dubai, United Arab Emirates",
+      "description": "Mondia provides VAS platforms for teleco operators",
+      "startDate": "2014-04-13",
+      "endDate": "2018-11-01",
+      "summary": "Leading the development of digital entertainment portals ensuring high code quality, fast runtime performance, and easy application operation.",
+      "highlights": [
+        "Migrated products from JSP based web pages to a modern SPA/PWA web application that offers an enhanced user experience.",
+        "Implemented reusable Angular components base that significantly reduced time required for lunching new products and reduced the maintenance cost.",
+        "Shared knowledge and assisted offshore team translating projects requirements into technical tasks."
+      ]
+    },
+    {
+      "name": "Fujitsu Consulting",
+      "position": "Freelancer - UI Customization",
+      "website": "https://fujitsu.com",
+      "location": "Al Ain, United Arab Emirates",
+      "description": "",
+      "startDate": "2013-06-01",
+      "endDate": "2013-09-01",
+      "summary": "Worked as a freelancer before receiving bachelor’s degree. The project is to configure l10n and i18n for SAP Strategy Management.",
+      "highlights": [
+        "Application internationalization for RTL and reporting.",
+        "Configure Arabic localization messages and labels",
+        "Applying organization styles guide lines to change the look and feel of the application.",
+        "Extending and customizing existing features."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "American University of Sharjah",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2010-01-01",
+      "endDate": "2014-01-25",
+      "gpa": "2.58",
+      "courses": [
+        "CMP305 - Data Structures and Algorithms",
+        "CMP235 - Ethics for Computing Info Tech",
+        "CMP352 - Human Computer Interaction"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Styles",
+      "keywords": [
+        "Object Originated",
+        "Domain Driven Design",
+        "Reactive Programming",
+        "Function Programming",
+        "Test Driven Design"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "expert",
+      "keywords": [
+        "Java", "Kotlin", "Scala", "JavaScript", "TypeScript", "Dart", "HTML5", "CSS", "SCSS", "SQL"
+      ]
+    },
+    {
+      "name": "Main Backend Stack",
+      "level": "expert",
+      "keywords": [
+        "Maven", "Spring (boot, cloud, web, WebFlux, security, data, core, portlet MVC)", "guice", "Play Framework (Scala)", "thymeleaf", "jUnit", "JPA (Hibernate)", "JAX-RS"
+      ]
+    },
+    {
+      "name": "Main Frontend Stack",
+      "level": "expert",
+      "keywords": [
+        "Angular", "RxJS", "Angular Material", "Angular CLI", "Karma", "Jasmine", "Webpack", "gulp", "Bootstrap", "Serverless (AWS lambda)", "NestJS", "expressJS", "npm", "yarn"
+      ]
+    },
+    {
+      "name": "DevOps Tools",
+      "level": "Knowledgeable",
+      "keywords": [
+        "Jenkins (basics)", "Docker (basics)", "Git", "SonarQube."
+      ]
+    },
+    {
+      "name": "Software Management Tools",
+      "level": "Knowledgeable",
+      "keywords": [
+        "JIRA", "Confluence", "bitbucket", "Trello", "GitHub"
+      ]
+    },
+    {
+      "name": "Hardware",
+      "level": "Knowledgeable",
+      "keywords": [
+        "Networking Basics", "Raspberry Pi"
+      ]
+    },
+    {
+      "name": "Database Systems",
+      "level": "Knowledgeable",
+      "keywords": [
+        "SQL (MySQL, Postgres)", "Redis", "MongoDB"
+      ]
+    },
+    {
+      "name": "Operating Systems",
+      "level": "Knowledgeable",
+      "keywords": [
+        "Ubuntu", "MacOS", "Windows"
+      ]
+    },
+    {
+      "name": "Worth Mentioning",
+      "level": "Knowledgeable",
+      "keywords": [
+        "Flutter", "react", "Ionic", "ASP.NET MVC", "Portlet", "Android"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Arabic",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Walking",
+      "keywords": []
+    },
+    {
+      "name": "Technology",
+      "keywords": []
+    },
+    {
+      "name": "Economy",
+      "keywords": []
+    }
+  ],
+  "projects": [
+
+  ]
+}
