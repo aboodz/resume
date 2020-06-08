@@ -8,6 +8,7 @@ import { LanguageData, Fluency } from "../components/language";
 import { IntresetData } from "../components/interest";
 import { SkillSetData } from "../components/skill-set";
 
+countries.registerLocale(en);
 
 export function extractAddress(resume: ResumeSchema): string {
   return `${resume.basics.location.city}, ${countries.getName(resume.basics.location.countryCode, 'en')}`;
