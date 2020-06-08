@@ -21,12 +21,15 @@ export class WorkExperience extends Component<WorkExperienceData> {
         <h3>{company} </h3>
         <a class="logo" href={website.toString()}><img src={companyImageMap[company]} /></a>
         <div class="timeline">
-          <h4>{position}</h4>
-          <small>
-            <span>{cvDateFormat(startDate)} - {cvDateFormat(endDate)}</span>
+          <h4>
+            {position}
             <br />
-            <span>{location}</span>
-          </small>
+            <small>
+              <span>{cvDateFormat(startDate)} - {cvDateFormat(endDate)}</span>
+              <br />
+              <span>{location}</span>
+            </small>
+          </h4>
           <p>{summary}</p>
           <ul>
             {highlights.map(hilight => (<li>{hilight}</li>))}
