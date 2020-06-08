@@ -109,66 +109,100 @@
       ]
     },
     {
-      "name": "Programming Languages",
-      "level": "expert",
-      "keywords": [
-        "Java", "Kotlin", "Scala", "JavaScript", "TypeScript", "Dart", "HTML5", "CSS", "SCSS", "SQL"
-      ]
-    },
-    {
       "name": "Main Backend Stack",
-      "level": "expert",
       "keywords": [
-        "Maven", "Spring (boot, cloud, web, WebFlux, security, data, core, portlet MVC)", "guice", "Play Framework (Scala)", "thymeleaf", "jUnit", "JPA (Hibernate)", "JAX-RS"
+        "Maven",
+        "Spring (boot, WebFlux, Cloud, Web, Security, data, core, portlet MVC)",
+        "JAX-RS",
+        "JPA (Hibernate)",
+        "jUnit"
       ]
     },
     {
       "name": "Main Frontend Stack",
-      "level": "expert",
       "keywords": [
-        "Angular", "RxJS", "Angular Material", "Angular CLI", "Karma", "Jasmine", "Webpack", "gulp", "Bootstrap", "Serverless (AWS lambda)", "NestJS", "expressJS", "npm", "yarn"
+        "Angular",
+        "RxJS",
+        "Angular Material",
+        "Angular CLI",
+        "Jasmine",
+        "Webpack",
+        "npm",
+        "yarn"
+      ]
+    },
+    {
+      "name": "Others Technologies",
+      "keywords": [
+        "Play Framework (Scala)",
+        "guice",
+        "thymeleaf",
+        "Serverless (AWS lambda)",
+        "NestJS",
+        "expressJS",
+        "gulp",
+        "Bootstrap"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "keywords": [
+        "Java",
+        "Kotlin",
+        "Scala",
+        "JavaScript",
+        "TypeScript",
+        "Dart",
+        "HTML5",
+        "CSS",
+        "SCSS",
+        "SQL"
       ]
     },
     {
       "name": "DevOps Tools",
-      "level": "Knowledgeable",
       "keywords": [
-        "Jenkins (basics)", "Docker (basics)", "Git", "SonarQube."
+        "Jenkins (basics)",
+        "Docker (basics)",
+        "Git",
+        "SonarQube",
+        "GitHub Actions"
       ]
     },
     {
       "name": "Software Management Tools",
-      "level": "Knowledgeable",
       "keywords": [
-        "JIRA", "Confluence", "bitbucket", "Trello", "GitHub"
+        "JIRA",
+        "Confluence",
+        "bitbucket",
+        "Trello",
+        "GitHub"
       ]
     },
     {
       "name": "Hardware",
-      "level": "Knowledgeable",
       "keywords": [
-        "Networking Basics", "Raspberry Pi"
+        "Networking Basics",
+        "Raspberry Pi"
       ]
     },
     {
       "name": "Database Systems",
-      "level": "Knowledgeable",
       "keywords": [
-        "SQL (MySQL, Postgres)", "Redis", "MongoDB"
-      ]
-    },
-    {
-      "name": "Operating Systems",
-      "level": "Knowledgeable",
-      "keywords": [
-        "Ubuntu", "MacOS", "Windows"
+        "SQL (MySQL, Postgres)",
+        "Redis",
+        "MongoDB"
       ]
     },
     {
       "name": "Worth Mentioning",
-      "level": "Knowledgeable",
       "keywords": [
-        "Flutter", "react", "Ionic", "ASP.NET MVC", "Portlet", "Android"
+        "Flutter",
+        "react",
+        "Ionic",
+        "ASP.NET MVC",
+        "Portlet",
+        "Android"
       ]
     }
   ],
@@ -196,7 +230,5 @@
       "keywords": []
     }
   ],
-  "projects": [
-
-  ]
+  "projects": []
 }
