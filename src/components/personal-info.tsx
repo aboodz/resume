@@ -36,15 +36,15 @@ export class PersonalInfo extends Component<PersonaInfoData> {
           <h4>{label}</h4>
         </div>
         <address style="flex: 1; text-align: center;">
-          <a href={`tel:${mobile}`}><FontAwesomeIcon icon={faMobileAlt} /> {mobile}</a><br />
+          {mobile && [<a href={`tel:${mobile}`}><FontAwesomeIcon icon={faMobileAlt} /> {mobile}</a>, <br />]}
           {telephone && [<a><FontAwesomeIcon icon={faPhoneSquareAlt} /> {telephone}</a>, <br />]}
           <a href={`http://maps.google.com/?q=${address}`}><FontAwesomeIcon icon={faMapMarkedAlt} /> {address}</a><br />
-          <a href={`mailto:${email}`}><FontAwesomeIcon icon={faAt} /> {email}</a><br />
+          {email && [<a href={`mailto:${email}`}><FontAwesomeIcon icon={faAt} /> {email}</a>, <br />]}
           {
             this.groupByUsername(profiles).map((groupedProfiles => {
               return [groupedProfiles.profiles.map(p =>
                 <a href={p.url}><FontAwesomeIcon icon={networkMapping[p.network]} />&nbsp;</a>
-              ), <a>{groupedProfiles.username}</a>]
+              ), <a>{groupedProfiles.username}</a>, <br />]
             }))
           }
         </address>
