@@ -4,8 +4,6 @@
     "sourceMap": true,
     "noImplicitAny": true,
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImportsComment": "there is a bug in parcel. It cannot fails to barrel import lodash functions. We use synthetic import instead",
-    "allowSyntheticDefaultImports": true,
     "module": "es6",
     "moduleResolution": "node",
     "target": "es6",
