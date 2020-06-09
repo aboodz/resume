@@ -30,7 +30,7 @@ export class PersonalInfo extends Component<PersonaInfoData> {
 
   render({ name, label, email, mobile, telephone, address, profiles }: PersonaInfoData) {
     return (
-      <header style="display: flex;">
+      <header style="display: flex; align-items: center;">
         <div style="flex: 2">
           <h1>{name}</h1>
           <h4>{label}</h4>
