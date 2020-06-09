@@ -1,20 +1,12 @@
-// @import "~milligram";
 
 @page {
   size: A4;
-  // padding: 10mm;
-
-  .experience {
-    page-break-inside: avoid;
-  }
 }
 
 @media print {
   body {
     width: 21cm;
     height: 29.7cm;
-    /* margin: 20mm 20mm 20mm 20mm; */
-    /* change the margins as you want them to be. */
   }
 
   img {
