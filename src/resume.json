@@ -84,13 +84,15 @@
   ],
   "education": [
     {
-      "institution": "American University of Sharjah",
+      "institution": "American University of Sharjah | Sharjah, United Arab Emirates",
+      "url": "https://aus.edu",
       "area": "Computer Science",
       "studyType": "Bachelor of Science",
       "startDate": "2010-01-01",
       "endDate": "2014-01-25",
       "gpa": "2.58",
       "courses": [
+        "CMP416 - Internet and Network Computing",
         "CMP305 - Data Structures and Algorithms",
         "CMP235 - Ethics for Computing Info Tech",
         "CMP352 - Human Computer Interaction"

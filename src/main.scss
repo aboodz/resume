@@ -94,16 +94,21 @@ ul.timeline section {
 .education {
   padding: 0;
   list-style: none;
+
+  .courses {
+    list-style: disc;
+    // padding: 0;
+  }
 }
 
 .skills {
-  flex: 3;
+  flex: 1;
   background: #eeeeee;
   padding: 1.5rem;
 }
 
 .more-info {
-  flex: 2;
+  flex: 1;
   padding: 1.5rem;
 }
 
