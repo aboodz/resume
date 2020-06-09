@@ -9,10 +9,10 @@ export interface SkillSetData {
 export class SkillSet extends Component<SkillSetData> {
   render({ name, level, keywords }: SkillSetData) {
     return (
-      <section class="skill-set">
+      <article class="skill-set">
         <h4>{name} {level ? <span class="level">{level}</span> : ''}</h4>
         <p class="keywords">{keywords.join(', ')}</p>
-      </section>
+      </article>
     );
   }
 

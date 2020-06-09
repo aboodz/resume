@@ -8,10 +8,10 @@ export class ParagraphData {
 export class Paragraph extends Component<ParagraphData> {
   render({ title, text }: ParagraphData) {
     return (
-      <div>
+      <article class="paragraph" aria-label={title}>
         <h2>{title}</h2>
         <p>{text}</p>
-      </div>
+      </article>
     );
   }
 }

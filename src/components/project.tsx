@@ -17,18 +17,16 @@ export class Project extends Component<ProjectData> {
 
   render({ name, description, url }: ProjectData) {
     return (
-      <section>
-        <h3>
-          {name}
-          <br />
+      <article>
+        <header>
+          <h3>{name}</h3>
           <small>
             {url.toString().includes('github') && <FontAwesomeIcon icon={faGithub} />}&nbsp;
             <a href={url.toString()}>{url.toString()}</a>
           </small>
-        </h3>
-
+        </header>
         <p>{description}</p>
-      </section>
+      </article>
     );
   }
 

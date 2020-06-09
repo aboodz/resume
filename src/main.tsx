@@ -17,61 +17,68 @@ const App = () => (
 
     <Paragraph title="Summary" text={resume.basics.summary} />
 
-    <h2>Work Experience</h2>
-    {
-      extractWorkExperience(resume).map(we => {
-        return <WorkExperience {...we} />
-      })
-    }
+    <section aria-label="Work Experience">
+      <h2>Work Experience</h2>
+      {
+        extractWorkExperience(resume).map(we => {
+          return <WorkExperience {...we} />
+        })
+      }
+    </section>
 
     <div style="display: flex;">
-      <div class="skills">
+      <section class="skills">
         <h2>Technologies and Skills</h2>
         {
           extractSkills(resume).map(skillSet => {
             return <SkillSet {...skillSet} />
           })
         }
-      </div>
+      </section>
 
-      <div class="more-info">
-        <div class="projects">
+      <section class="more-info">
+        <section class="projects">
           <h2>Projects</h2>
           {
             extractProjects(resume).map(p => {
               return <Project {...p} />
             })
           }
-        </div>
+        </section>
 
-        <h2>Education</h2>
-        <ul class="education">
+        <section class="education">
+          <h2>Education</h2>
           {
             extractEducation(resume).map(ed => {
               return <Education {...ed} />;
             })
           }
-        </ul>
+        </section>
 
-        <h2>Language</h2>
-        <ul class="languages">
-          {
-            extractLanguages(resume).map(lang => {
-              return <Language {...lang} />
-            })
-          }
-        </ul>
 
-        <h2>Interests</h2>
-        <ul class="interests">
-          {
-            extractInterests(resume).map(intrest => {
-              return <Interest {...intrest} />
-            })
-          }
-        </ul>
+        <section>
+          <h2>Language</h2>
+          <ul class="languages">
+            {
+              extractLanguages(resume).map(lang => {
+                return <Language {...lang} />
+              })
+            }
+          </ul>
+        </section>
 
-      </div>
+        <section>
+          <h2>Interests</h2>
+          <ul class="interests">
+            {
+              extractInterests(resume).map(intrest => {
+                return <Interest {...intrest} />
+              })
+            }
+          </ul>
+        </section>
+
+      </section>
     </div>
 
   </main>

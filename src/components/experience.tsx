@@ -17,25 +17,28 @@ export interface WorkExperienceData {
 export class WorkExperience extends Component<WorkExperienceData> {
   render({ company, location, highlights, position, startDate, summary, website, endDate }: WorkExperienceData) {
     return (
-      <section class="work-experience">
-        <h3>{company} </h3>
-        <a class="logo" href={website.toString()}><img src={companyImageMap[company]} /></a>
-        <div class="timeline">
-          <h4>
-            {position}
-            <br />
+      <article class="work-experience">
+        <h3>{company}</h3>
+        <aside class="logo">
+          <a href={website.toString()}><img src={companyImageMap[company]} /></a>
+        </aside>
+        <section class="timeline">
+          <header>
+            <h4>{position}</h4>
             <small>
               <span>{cvDateFormat(startDate)} - {cvDateFormat(endDate)}</span>
               <br />
               <span>{location}</span>
             </small>
-          </h4>
-          <p>{summary}</p>
-          <ul>
-            {highlights.map(hilight => (<li>{hilight}</li>))}
-          </ul>
-        </div>
-      </section>
+          </header>
+          <p>
+            {summary}
+            <ul>
+              {highlights.map(hilight => (<li>{hilight}</li>))}
+            </ul>
+          </p>
+        </section>
+      </article>
     );
   }
 }
