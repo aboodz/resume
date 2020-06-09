@@ -20,7 +20,7 @@ export class WorkExperience extends Component<WorkExperienceData> {
       <article class="work-experience">
         <h3>{company}</h3>
         <aside class="logo">
-          <a href={website.toString()}><img src={companyImageMap[company]} /></a>
+          <a href={website.toString()}><img alt={`${company} logo`} src={companyImageMap[company]} /></a>
         </aside>
         <section class="timeline">
           <header>

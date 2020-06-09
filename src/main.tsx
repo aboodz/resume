@@ -56,15 +56,13 @@ const App = () => (
         </section>
 
 
-        <section>
+        <section class="languages">
           <h2>Language</h2>
-          <ul class="languages">
-            {
-              extractLanguages(resume).map(lang => {
-                return <Language {...lang} />
-              })
-            }
-          </ul>
+          {
+            extractLanguages(resume).map(lang => {
+              return <Language {...lang} />
+            })
+          }
         </section>
 
         <Interest intrests={...extractInterests(resume)} />
