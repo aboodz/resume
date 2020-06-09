@@ -44,7 +44,7 @@
       "summary": "Working as part of the core team to build MAF Payments, a Payment Gateway, that processes and settle payments from customers to merchants",
       "highlights": [
         "Leading the development of an Angular based PG (payment gateway) portal that supports merchants and other internal users.",
-        "Building several backend components including a WebFlux BFF (backend for frontend) component, a Serverless API Gateway, a non-blocking OAuth system.",
+        "Building several backend components including a WebFlux BFF (backend for frontend) component, a Serverless API Gateway, and WebFlux authentication system.",
         "Contributed in updating and migrating beam app components, a digital wallet application, and ensuring a smooth sunset plan.",
         "Engaging in technical discussions with fellow developers and DevOps.",
         "Mentoring junior developer and new team recruits to continuously improve their technical skills."
