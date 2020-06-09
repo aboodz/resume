@@ -16,7 +16,7 @@ export interface EducationData {
 export class Education extends Component<EducationData> {
   render({ institution, major, courses, degree, endDate, gpa, startDate }: EducationData) {
     return (
-      <li class="education">
+      <li>
         {cvDateFormat(startDate)} - {cvDateFormat(endDate)}: <br />
         {degree} in {major}, {institution} {gpa > 3 ? `with ${gpa}/4.00 GPA` : ''}
       </li>

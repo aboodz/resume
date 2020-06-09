@@ -35,7 +35,7 @@ const App = () => (
 
       <div class="more-info">
         <h2>Education</h2>
-        <ul>
+        <ul class="education">
           {
             extractEducation(resume).map(ed => {
               return <Education {...ed} />;
@@ -44,7 +44,7 @@ const App = () => (
         </ul>
 
         <h2>Language</h2>
-        <ul>
+        <ul class="languages">
           {
             extractLanguages(resume).map(lang => {
               return <Language {...lang} />
@@ -52,8 +52,8 @@ const App = () => (
           }
         </ul>
 
-        <h2>Hobbies</h2>
-        <ul>
+        <h2>Interests</h2>
+        <ul class="interests">
           {
             extractInterests(resume).map(intrest => {
               return <Interest {...intrest} />
