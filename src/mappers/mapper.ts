@@ -7,6 +7,7 @@ import { EducationData } from "../components/education";
 import { LanguageData, Fluency } from "../components/language";
 import { IntresetData } from "../components/interest";
 import { SkillSetData } from "../components/skill-set";
+import { ProjectData, ProjectType } from "../components/project";
 
 countries.registerLocale(en);
 
@@ -52,6 +53,16 @@ export function extractSkills(resume: ResumeSchema): SkillSetData[] {
     name: s.name,
     level: s.level,
     keywords: s.keywords
+  }));
+}
+
+export function extractProjects(resume: ResumeSchema): ProjectData[] {
+  return resume.projects.map(p => ({
+    name: p.name,
+    description: p.description,
+    type: p.type as ProjectType,
+    url: new URL(p.url),
+    highlights: p.highlights
   }));
 }
 

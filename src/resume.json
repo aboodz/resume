@@ -236,10 +236,12 @@
   ],
   "projects": [
     {
-      "name": "JSON Resume Printable CV",
-      "description": "",
-      "entity": "Personal",
-      "url": ""
+      "name": "My Personal JSON Resume",
+      "description": "This project aims to create my CV using JSONResume and preact. It provides easy way to manage resume data, styles, and iterations. In fact, this Resume is created using this project.",
+      "entity": "personal",
+      "url": "https://github.com/aboodz/resume",
+      "type": "application",
+      "highlights": []
     }
   ]
 }
