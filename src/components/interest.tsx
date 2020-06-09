@@ -6,11 +6,17 @@ export interface IntresetData {
   keywords: string[];
 }
 
+export interface Interests {
+  intrests: IntresetData[];
+};
 
-export class Interest extends Component<IntresetData> {
-  render({ name }: IntresetData) {
+export class Interest extends Component<Interests> {
+  render({ intrests }: Interests) {
     return (
-      <li>{name}</li>
+      <section>
+        <h2>Interests</h2>
+        <p>{intrests.map(i => i.name).join(', ')}</p>
+      </section>
     );
   }
 }

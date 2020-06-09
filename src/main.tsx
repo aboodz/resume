@@ -67,16 +67,7 @@ const App = () => (
           </ul>
         </section>
 
-        <section>
-          <h2>Interests</h2>
-          <ul class="interests">
-            {
-              extractInterests(resume).map(intrest => {
-                return <Interest {...intrest} />
-              })
-            }
-          </ul>
-        </section>
+        <Interest intrests={...extractInterests(resume)} />
 
       </section>
     </div>

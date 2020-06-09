@@ -26,21 +26,25 @@ a {
 }
 
 header {
+
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    // margin-top: 0rem;
     margin-bottom: 0rem;
+  }
+
+  & + p {
+    margin-top: 0.25em;;
   }
 }
 
-p {
-  // margin-top: 0;
+h2 {
+  padding-bottom: 0.1em;
+  border-bottom: solid 1px lightslategray;
 }
-
 
 hr {
   margin-top: 0.5rem;
@@ -98,14 +102,20 @@ ul.timeline section {
 }
 
 .skills {
-  flex: 1;
+  flex: 2;
   background: #eeeeee;
-  padding: 1.5rem;
+  padding: 1em;
 }
 
 .more-info {
   flex: 1;
-  padding: 1.5rem;
+  padding: 1em;
+  font-size: 0.9em;
+}
+
+.interests {
+  padding: 0;
+  list-style: none;
 }
 
 .skill-set {
