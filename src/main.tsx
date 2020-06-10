@@ -13,7 +13,6 @@ import { Project } from './components/project';
 const App = () => (
   <main class="page">
     <PersonalInfo {...extractPersonalInfo(resume)} />
-    <hr />
 
     <Paragraph title="Summary" text={resume.basics.summary} />
 

@@ -33,7 +33,7 @@ export class PersonalInfo extends Component<PersonaInfoData> {
       <header style="display: flex; align-items: center;">
         <div style="flex: 2">
           <h1>{name}</h1>
-          <h4>{label}</h4>
+          <span>{label}</span>
         </div>
         <address style="flex: 1; text-align: center;">
           {mobile && [<a href={`tel:${mobile}`}><FontAwesomeIcon icon={faMobileAlt} /> {mobile}</a>, <br />]}
