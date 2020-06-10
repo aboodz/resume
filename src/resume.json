@@ -121,7 +121,9 @@
         "Spring (boot, WebFlux, Cloud, Web, Security, data, core, portlet MVC)",
         "JAX-RS",
         "JPA (Hibernate)",
-        "jUnit"
+        "jUnit",
+        "SQL (MySQL, Postgres)",
+        "MongoDB"
       ]
     },
     {
@@ -147,7 +149,8 @@
         "NestJS",
         "expressJS",
         "gulp",
-        "Bootstrap"
+        "Bootstrap",
+        "Redis"
       ]
     },
     {
@@ -174,21 +177,6 @@
       ]
     },
     {
-      "name": "Hardware",
-      "keywords": [
-        "Networking Basics",
-        "Raspberry Pi"
-      ]
-    },
-    {
-      "name": "Database Systems",
-      "keywords": [
-        "SQL (MySQL, Postgres)",
-        "Redis",
-        "MongoDB"
-      ]
-    },
-    {
       "name": "DevOps Tools",
       "level": "basic",
       "keywords": [
@@ -206,7 +194,9 @@
         "Ionic",
         "ASP.NET MVC",
         "Portlet",
-        "Android"
+        "Android",
+        "Networking Basics",
+        "Raspberry Pi"
       ]
     }
   ],
