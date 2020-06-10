@@ -7,7 +7,7 @@ import { networkMapping } from '../mappers/networkIcon';
 export interface ProfileData {
   network: string;
   username: string;
-  url: string;
+  url: URL;
 }
 
 export interface PersonaInfoData {
@@ -30,25 +30,28 @@ export class PersonalInfo extends Component<PersonaInfoData> {
 
   render({ name, label, email, mobile, telephone, address, profiles }: PersonaInfoData) {
     return (
-      <header style="display: flex; align-items: center;">
-        <div style="flex: 2">
+      <section style="display: flex;">
+        <header style="flex: 2">
           <h1>{name}</h1>
           <span>{label}</span>
-        </div>
+        </header>
         <address style="flex: 1; text-align: center;">
           {mobile && [<a href={`tel:${mobile}`}><FontAwesomeIcon icon={faMobileAlt} /> {mobile}</a>, <br />]}
           {telephone && [<a><FontAwesomeIcon icon={faPhoneSquareAlt} /> {telephone}</a>, <br />]}
           <a href={`http://maps.google.com/?q=${address}`}><FontAwesomeIcon icon={faMapMarkedAlt} /> {address}</a><br />
           {email && [<a href={`mailto:${email}`}><FontAwesomeIcon icon={faAt} /> {email}</a>, <br />]}
           {
-            this.groupByUsername(profiles).map((groupedProfiles => {
-              return [groupedProfiles.profiles.map(p =>
-                <a href={p.url}><FontAwesomeIcon icon={networkMapping[p.network]} />&nbsp;</a>
-              ), <a>{groupedProfiles.username}</a>, <br />]
-            }))
+            profiles.map(p =>
+              (
+                [
+                <a href={p.url.href}><FontAwesomeIcon icon={networkMapping[p.network]} />&nbsp;{p.url.host}{p.url.pathname}</a>,
+                  <br />
+                ]
+              )
+            )
           }
         </address>
-      </header>
+      </section>
     )
   }
 }

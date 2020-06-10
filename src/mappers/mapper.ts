@@ -18,7 +18,7 @@ export function extractAddress(resume: ResumeSchema): string {
 export function extractProfiles(resume: ResumeSchema): ProfileData[] {
   return resume.basics.profiles.map(p => ({
     network: p.network,
-    url: p.url,
+    url: new URL(p.url),
     username: p.username
   }));
 }
