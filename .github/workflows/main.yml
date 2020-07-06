@@ -24,3 +24,4 @@ jobs:
           REPOSITORY_NAME: aboodz/aboodz.github.io
           BRANCH: master
           FOLDER: dist
+          CLEAN: true
