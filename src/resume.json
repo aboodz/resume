@@ -62,6 +62,7 @@
       "highlights": [
         "Migrated products from JSP based web pages to a modern SPA/PWA web application that offers an enhanced user experience.",
         "Implemented reusable Angular components base that significantly reduced time required for lunching new products and reduced the maintenance cost.",
+        "Built BFF server to facilitate authentication, API response caching, and result aggregation",
         "Shared knowledge and assisted offshore team translating projects requirements into technical tasks."
       ]
     },
@@ -212,11 +213,11 @@
   ],
   "interests": [
     {
-      "name": "Walking",
+      "name": "Technology",
       "keywords": []
     },
     {
-      "name": "Technology",
+      "name": "Video Games",
       "keywords": []
     },
     {
