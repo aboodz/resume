@@ -227,6 +227,14 @@
   ],
   "projects": [
     {
+      "name": "Reactor Blog",
+      "description": "An experiment to create a pseudo framework using reactor-netty with a simple RESTful api without using any Spring Framework dependency",
+      "entity": "personal",
+      "url": "https://github.com/aboodz/reactor-blog",
+      "type": "application",
+      "highlights": []
+    },
+    {
       "name": "My Personal JSON Resume",
       "description": "This project aims to create my CV using JSONResume and preact. It provides easy way to manage resume data, styles, and iterations. In fact, this Resume is created using this project.",
       "entity": "personal",
