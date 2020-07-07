@@ -25,7 +25,7 @@ const App = () => (
       }
     </section>
 
-    <div style="display: flex;">
+    <div class="second-page" style="display: flex;">
       <section class="skills">
         <h2>Technologies and Skills</h2>
         {

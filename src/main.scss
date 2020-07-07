@@ -13,6 +13,10 @@
     height: 3em;
   }
 
+  .second-page {
+    page-break-before: always;
+  }
+
 }
 
 a {
