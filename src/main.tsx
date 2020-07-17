@@ -1,6 +1,5 @@
 import { h, render } from 'preact';
 import * as resume from './resume.json';
-import { Paragraph } from './components/paragraph';
 import { PersonalInfo } from './components/personal-info';
 import { extractPersonalInfo, extractWorkExperience, extractEducation, extractLanguages, extractInterests, extractSkills, extractProjects } from './mappers/mapper';
 import { WorkExperience } from './components/experience';
@@ -9,12 +8,14 @@ import { Language } from './components/language';
 import { Interest } from './components/interest';
 import { SkillSet } from './components/skill-set';
 import { Project } from './components/project';
+import { SummarySection } from './components/summary';
 
 const App = () => (
+
   <main class="page">
     <PersonalInfo {...extractPersonalInfo(resume)} />
 
-    <Paragraph title="Summary" text={resume.basics.summary} />
+    <SummarySection resume={resume} />
 
     <section aria-label="Work Experience">
       <h2>Work Experience</h2>
