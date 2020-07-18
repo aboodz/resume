@@ -1,17 +1,34 @@
 import { Component, h } from "preact";
+import { flow } from "lodash-es";
+import { extractorComponent } from "./hoc/resume-data-extractor";
+import { ResumeSchema } from "../types/resume";
+import { resumeSection } from "./hoc/resume-section";
 
-export type Fluency = 'native' | 'fluent' | 'advanced' | 'intermediate' | 'beginner'
+type Fluency = 'native' | 'fluent' | 'advanced' | 'intermediate' | 'beginner'
 
-export interface LanguageData {
+interface LanguageData {
   langauge: string;
   fluency: Fluency;
 }
 
-export class Language extends Component<LanguageData> {
-  render({langauge, fluency} :LanguageData) {
+class Language extends Component<LanguageData> {
+  render({ langauge, fluency }: LanguageData) {
     return (
-    <div>{langauge}: {fluency}</div>
+      <div>{langauge}: {fluency}</div>
     );
   }
 
 }
+
+function extractLanguages(resume: ResumeSchema): LanguageData[] {
+  return resume.languages.map(l => ({
+    langauge: l.language,
+    fluency: l.fluency as Fluency
+  }));
+}
+
+
+export const LanguageSection = flow(
+  extractorComponent(extractLanguages),
+  resumeSection
+)(Language);

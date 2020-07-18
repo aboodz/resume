@@ -1,7 +1,7 @@
 import { Component, h, ComponentType, ComponentClass } from "preact";
 import { resumeSection } from "./hoc/resume-section";
-import { resumeComponent } from "./hoc/resume-data-extractor";
-import { flowRight } from "lodash-es"
+import { extractorComponent } from "./hoc/resume-data-extractor";
+import { flow } from "lodash-es"
 
 
 interface SummaryProps {
@@ -16,7 +16,7 @@ class Summary extends Component<SummaryProps> {
   }
 }
 
-export const SummarySection = flowRight(
-  resumeComponent((resume) => ({summary: resume.basics.summary})),
-  resumeSection('Summary', 'summary')
+export const SummarySection = flow(
+  extractorComponent((resume) => ({summary: resume.basics.summary})),
+  resumeSection('Summary'),
 )(Summary)

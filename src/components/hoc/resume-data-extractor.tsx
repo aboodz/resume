@@ -7,7 +7,7 @@ interface ExtractorProps {
   resume: ResumeSchema;
 }
 
-export const resumeComponent = <PROPS extends object>(extractFunction: extractFunction<PROPS>) => (WrappedComponent: ComponentType<PROPS>): ComponentType<ExtractorProps> => {
+export const extractorComponent = <PROPS extends object>(extractFunction: extractFunction<PROPS>) => (WrappedComponent: ComponentType<PROPS>): ComponentType<ExtractorProps> => {
 
   return class extends Component<ExtractorProps> {
     render({ resume }: ExtractorProps) {

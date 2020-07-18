@@ -1,8 +1,11 @@
 import { Component, h } from "preact";
 import { cvDateFormat } from "../util/date-format";
+import { flow } from "lodash-es";
+import { ResumeSchema } from "../types/resume";
+import { resumeSection } from "./hoc/resume-section";
+import { extractorComponent } from "./hoc/resume-data-extractor";
 
-
-export interface EducationData {
+interface EducationProps {
   institution: string;
   major: string;
   degree: string;
@@ -13,8 +16,8 @@ export interface EducationData {
 }
 
 
-export class Education extends Component<EducationData> {
-  render({ institution, major, courses, degree, endDate, gpa, startDate }: EducationData) {
+class Education extends Component<EducationProps> {
+  render({ institution, major, courses, degree, endDate, gpa, startDate }: EducationProps) {
     return (
       <section>
         <header>
@@ -27,3 +30,20 @@ export class Education extends Component<EducationData> {
     );
   }
 }
+
+function extractEducation(resume: ResumeSchema): EducationProps[] {
+  return resume.education.map(e => ({
+    institution: e.institution,
+    courses: e.courses,
+    degree: e.studyType,
+    startDate: new Date(e.startDate),
+    endDate: e.endDate ? new Date(e.endDate) : null,
+    gpa: parseInt(e.gpa, 10),
+    major: e.area
+  }));
+}
+
+export const EducationSection = flow(
+  extractorComponent(extractEducation),
+  resumeSection('Education')
+)(Education);

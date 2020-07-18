@@ -1,22 +1,34 @@
 import { Component, h } from "preact";
+import { flow } from "lodash-es";
+import { extractorComponent } from "./hoc/resume-data-extractor";
+import { ResumeSchema } from "../types/resume";
+import { resumeSection } from "./hoc/resume-section";
 
 
-export interface IntresetData {
+interface IntresetData {
   name: string;
   keywords: string[];
 }
 
-export interface Interests {
+interface IntresetProps {
   intrests: IntresetData[];
 };
 
-export class Interest extends Component<Interests> {
-  render({ intrests }: Interests) {
+class Interest extends Component<IntresetProps> {
+  render({ intrests }: IntresetProps) {
     return (
-      <section>
-        <h2>Interests</h2>
-        <p>{intrests.map(i => i.name).join(', ')}</p>
-      </section>
+      <p>{intrests.map(i => i.name).join(', ')}</p>
     );
   }
 }
+
+function extractInterests(resume: ResumeSchema): IntresetProps {
+  return {
+    intrests: resume.interests.map(i => ({ name: i.name, keywords: i.keywords }))
+  }
+}
+
+export const InterestSection = flow(
+  extractorComponent(extractInterests),
+  resumeSection('Interests')
+)(Interest)
