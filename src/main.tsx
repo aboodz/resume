@@ -10,7 +10,7 @@ import { SkillsSection } from './components/skill-set';
 import { ProjectSection } from './components/project';
 import { SummarySection } from './components/summary';
 
-const date = new Date();
+const date = new Date('2020-07-18');
 
 const App = () => (
   <div class="page">
@@ -38,7 +38,7 @@ const App = () => (
     <footer>
       <div>
         Made by <a href="https://github.com/aboodz/resume">aboodz/resume</a> --
-        <time dateTime={date.toISOString()}>{date.toTimeString()}</time>
+        <time dateTime={date.toISOString()}>{date.toLocaleDateString()}</time>
       </div>
     </footer>
   </div>

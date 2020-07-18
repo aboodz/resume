@@ -26,7 +26,7 @@ class Education extends Component<EducationProps> {
         </hgroup>
         <p>
           <em>{degree} in {major} {gpa > 3 ? `, with ${gpa}/4.00 GPA` : ''}</em> <br />
-          <small>Graduated in <time dateTime={endDate.toISOString()}>{cvDateFormat(endDate)}</time>  <br /></small>
+          <small>Graduated in {cvDateFormat(endDate)}<br /></small>
         </p>
       </article>
     );
