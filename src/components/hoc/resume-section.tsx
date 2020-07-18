@@ -1,16 +1,44 @@
 import { Component, h, ComponentType } from "preact";
-import { CurryRight } from "lodash";
 
-export const resumeSection = (title: string, config: {role?: string, cssClass?: string} = {}) => <T extends object>(WrappedComponent: ComponentType<T>): ComponentType<T> => {
+type SemanticType = 'section' | 'aside' | 'article';
+interface SectionConfig {
+  role?: string,
+  cssClass?: string,
+  semanticType?: SemanticType
+}
+
+export const resumeSection = (title: string, config: SectionConfig = {}) => <T extends object>(WrappedComponent: ComponentType<T>): ComponentType<T> => {
+
   return class extends Component<T> {
 
+    private innerThings(props: T) {
+      return [
+        <h2>{title}</h2>,
+        <WrappedComponent {...props} />
+      ]
+    }
+
     render(props: T) {
-      return (
-        <section class={config.cssClass} role={config.role} aria-label={title}>
-          <h2>{title}</h2>
-          <WrappedComponent {...props} />
-        </section>
-      )
+      switch (config.semanticType ?? 'section') {
+        case 'article':
+          return (
+            <article class={config.cssClass} role={config.role} aria-label={title}>
+              {this.innerThings(props)}
+            </article>
+          );
+        case 'section':
+          return (
+            <section class={config.cssClass} role={config.role} aria-label={title}>
+              {this.innerThings(props)}
+            </section>
+          );
+        case 'aside':
+          return (
+            <aside class={config.cssClass} role={config.role} aria-label={title}>
+              {this.innerThings(props)}
+            </aside>
+          );
+      }
     }
 
   };

@@ -30,11 +30,11 @@ export class PersonalInfo extends Component<PersonaInfoData> {
 
   render({ name, label, email, mobile, telephone, address, profiles }: PersonaInfoData) {
     return (
-      <section style="display: flex;">
-        <header style="flex: 2">
+      <div style="display: flex;">
+        <hgroup style="flex: 2">
           <h1>{name}</h1>
           <span>{label}</span>
-        </header>
+        </hgroup>
         <address style="flex: 1; text-align: center;">
           {mobile && [<a href={`tel:${mobile}`}><FontAwesomeIcon icon={faMobileAlt} /> {mobile}</a>, <br />]}
           {telephone && [<a><FontAwesomeIcon icon={faPhoneSquareAlt} /> {telephone}</a>, <br />]}
@@ -51,7 +51,7 @@ export class PersonalInfo extends Component<PersonaInfoData> {
             )
           }
         </address>
-      </section>
+      </div>
     )
   }
 }

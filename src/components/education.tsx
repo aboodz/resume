@@ -19,14 +19,16 @@ interface EducationProps {
 class Education extends Component<EducationProps> {
   render({ institution, major, courses, degree, endDate, gpa, startDate }: EducationProps) {
     return (
-      <section>
-        <header>
+      <article class="education">
+        <hgroup>
           <h3>{institution.split('|')[0]} <br /></h3>
-          <span>{institution.split('|')[1]} <br /></span>
+          <address>{institution.split('|')[1]} <br /></address>
+        </hgroup>
+        <p>
           <em>{degree} in {major} {gpa > 3 ? `, with ${gpa}/4.00 GPA` : ''}</em> <br />
-          <small>Graduated in {cvDateFormat(endDate)}  <br /></small>
-        </header>
-      </section>
+          <small>Graduated in <time dateTime={endDate.toISOString()}>{cvDateFormat(endDate)}</time>  <br /></small>
+        </p>
+      </article>
     );
   }
 }

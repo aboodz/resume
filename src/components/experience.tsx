@@ -23,9 +23,9 @@ class WorkExperience extends Component<WorkExperienceProps> {
     return (
       <article class="work-experience">
         <h3>{company}</h3>
-        <aside class="logo">
+        <figure class="logo">
           <a href={website.toString()}><img alt={`${company} logo`} src={companyImageMap[company]} /></a>
-        </aside>
+        </figure>
         <section class="timeline">
           <header>
             <h4>{position}</h4>

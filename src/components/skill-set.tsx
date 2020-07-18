@@ -14,7 +14,7 @@ export class SkillSet extends Component<SkillSetProps> {
   render({ name, level, keywords }: SkillSetProps) {
     return (
       <article class="skill-set">
-        <h4>{name} {level ? <span class="level">{level}</span> : ''}</h4>
+        <h3>{name} {level ? <span class="level">{level}</span> : ''}</h3>
         <p class="keywords">{keywords.join(', ')}</p>
       </article>
     );
@@ -32,5 +32,5 @@ function extractSkills(resume: ResumeSchema): SkillSetProps[] {
 
 export const SkillsSection = flow(
   extractorComponent(extractSkills),
-  resumeSection('Technologies and Skills', {cssClass: 'skills'})
+  resumeSection('Technologies and Skills', { cssClass: 'skills', semanticType: 'aside' })
 )(SkillSet)

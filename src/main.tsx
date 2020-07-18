@@ -10,29 +10,38 @@ import { SkillsSection } from './components/skill-set';
 import { ProjectSection } from './components/project';
 import { SummarySection } from './components/summary';
 
+const date = new Date();
+
 const App = () => (
+  <div class="page">
+    <main>
+      <header>
+        <PersonalInfo {...extractPersonalInfo(resume)} />
+      </header>
 
-  <main class="page">
-    <PersonalInfo {...extractPersonalInfo(resume)} />
+      <SummarySection resume={resume} />
+      <WorkExperienceSection resume={resume} />
 
-    <SummarySection resume={resume} />
-    <WorkExperienceSection resume={resume} />
+      <div class="second-page" style="display: flex;">
+        <SkillsSection resume={resume} />
+        <div class="more-info">
+          <ProjectSection resume={resume} />
 
-    <div class="second-page" style="display: flex;">
-      <SkillsSection resume={resume} />
-      <section class="more-info">
-        <ProjectSection resume={resume} />
+          <EducationSection resume={resume} />
 
-        <EducationSection resume={resume} />
+          <LanguageSection resume={resume} />
 
-        <LanguageSection resume={resume} />
-
-        <InterestSection resume={resume} />
-
-      </section>
-    </div>
-
-  </main>
+          <InterestSection resume={resume} />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        Made by <a href="https://github.com/aboodz/resume">aboodz/resume</a> --
+        <time dateTime={date.toISOString()}>{date.toTimeString()}</time>
+      </div>
+    </footer>
+  </div>
 );
 
 render(<App />, document.body);
