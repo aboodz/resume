@@ -110,7 +110,7 @@
         "Functional Programming",
         "Test Driven Development",
         "Progressive Web Apps",
-        "Responsesive Layouts",
+        "Responsive Layouts",
         "Internationalization and Localization",
         "Microservice Architecture"
       ]
@@ -118,13 +118,13 @@
     {
       "name": "Main Backend Stack",
       "keywords": [
-        "Maven",
         "Spring (boot, WebFlux, Cloud, Web, Security, data, core, portlet MVC)",
         "JAX-RS",
         "JPA (Hibernate)",
         "jUnit",
         "SQL (MySQL, Postgres)",
-        "MongoDB"
+        "MongoDB",
+        "Maven"
       ]
     },
     {
@@ -143,6 +143,8 @@
     {
       "name": "Others Technologies",
       "keywords": [
+        "react",
+        "stencilJS",
         "Play Framework (Scala)",
         "guice",
         "thymeleaf",
@@ -151,7 +153,8 @@
         "expressJS",
         "gulp",
         "Bootstrap",
-        "Redis"
+        "Redis",
+        "Gradle"
       ]
     },
     {
@@ -173,7 +176,6 @@
       "name": "Software Management Tools",
       "keywords": [
         "Attlasian Tools (JIRA, Confluence, bitbucket, Trello)",
-        "Slack bots",
         "GitHub"
       ]
     },
@@ -191,7 +193,6 @@
       "name": "Worth Mentioning",
       "keywords": [
         "Flutter",
-        "react",
         "Ionic",
         "ASP.NET MVC",
         "Portlet",
@@ -218,7 +219,7 @@
     },
     {
       "name": "Video Games",
-      "keywords": []
+      "keywords": ["PRO"]
     },
     {
       "name": "Economy",
