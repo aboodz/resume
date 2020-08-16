@@ -1,3 +1,7 @@
 # Aboodz Online Resume
 
-Because I don't like using a rich text editor for writing text
+Hi, welcome to the source code of my resume. This resume details is based on json-resume. The render extract the data from the json file and renders it in a nicely formatted HTML document.
+
+
+## PS
+Feel free to fork and create your own version.
