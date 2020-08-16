@@ -76,10 +76,10 @@
       "endDate": "2013-09-01",
       "summary": "Worked as a freelancer before receiving bachelor’s degree. The project is to configure l10n and i18n for SAP Strategy Management.",
       "highlights": [
-        "Application internationalization for RTL and reporting.",
-        "Configure Arabic localization messages and labels",
-        "Applying organization styles guide lines to change the look and feel of the application.",
-        "Extending and customizing existing features."
+        "Added support for RTL layout for HTML pages and PDF reports.",
+        "Created a tool to auto translate thousands of labels from an excel sheet using Bing Translate API",
+        "Applied the styles guidelines to change the look and feel of the application.",
+        "Extended and customized existing features."
       ]
     }
   ],
