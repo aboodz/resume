@@ -7,14 +7,14 @@ import { resumeSection } from "./hoc/resume-section";
 type Fluency = 'native' | 'fluent' | 'advanced' | 'intermediate' | 'beginner'
 
 interface LanguageData {
-  langauge: string;
+  language: string;
   fluency: Fluency;
 }
 
 class Language extends Component<LanguageData> {
-  render({ langauge, fluency }: LanguageData) {
+  render({ language, fluency }: LanguageData) {
     return (
-      <div>{langauge}: {fluency}</div>
+      <div>{language}: {fluency}</div>
     );
   }
 
@@ -22,7 +22,7 @@ class Language extends Component<LanguageData> {
 
 function extractLanguages(resume: ResumeSchema): LanguageData[] {
   return resume.languages.map(l => ({
-    langauge: l.language,
+    language: l.language,
     fluency: l.fluency as Fluency
   }));
 }
@@ -30,5 +30,5 @@ function extractLanguages(resume: ResumeSchema): LanguageData[] {
 
 export const LanguageSection = flow(
   extractorComponent(extractLanguages),
-  resumeSection
+  resumeSection('Languages')
 )(Language);
