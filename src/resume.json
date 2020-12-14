@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Abdalkarim Akilan",
-    "label": "Full-Stack Developer | Spring | Angular | Java | TypeScript ",
+    "label": "Software Engineer | Spring | Angular | Java | TypeScript ",
     "picture": "",
     "email": "abd.akilan@hotmail.com",
     "phone": "",
     "website": "https://aboodz.github.io/",
-    "summary": "A dedicated and detail-oriented full-stack software developer with over seven years of hands-on experience building performant and user-friendly web applications. An enthusiastic learner who never stops seeking new knowledge. Skilled in modern web applications architecture and expert in various open-source backend technologies, front-end frameworks, and tools. Looking for an exciting opportunity to grow my career and expand my knowledge working in a technology-driven company.",
+    "summary": "A product focused and detail-oriented software engineer with over seven years of hands-on experience building performant REST APIs and user-friendly web applications. An enthusiastic learner and self-motivated who proactively builds and improves software. Looking for an exciting opportunity to grow my career and expand my knowledge working in a technology-driven company.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -102,7 +102,7 @@
   ],
   "skills": [
     {
-      "name": "Software Development Techniques",
+      "name": "Software Engineering Concepts",
       "keywords": [
         "Reactive Programming",
         "Domain Driven Design",
@@ -198,7 +198,8 @@
         "Portlet",
         "Android",
         "Networking Basics",
-        "Raspberry Pi"
+        "Raspberry Pi",
+        "Arduino"
       ]
     }
   ],
