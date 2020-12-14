@@ -48,5 +48,5 @@ function extractProjects(resume: ResumeSchema): ProjectProps[] {
 
 export const ProjectSection = flow(
   extractorComponent(extractProjects),
-  resumeSection('Projects')
+  resumeSection('Open Source Projects')
 )(Project);
