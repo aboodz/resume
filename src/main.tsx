@@ -10,7 +10,7 @@ import { SkillsSection } from './components/skill-set';
 import { ProjectSection } from './components/project';
 import { SummarySection } from './components/summary';
 
-const date = new Date('2020-12-13');
+const date = new Date('2021-02-20');
 
 const App = () => (
   <div class="page">
