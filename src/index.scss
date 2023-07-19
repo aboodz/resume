@@ -1,0 +1,65 @@
+@tailwind utilities;
+@tailwind components;
+@tailwind base;
+@layer base {
+  html {
+    font-family: Times, serif;
+  }
+  body {
+    @apply mt-4;
+  }
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold mb-3 border-b border-solid border-b-gray-500;
+    margin-block: 0.75rem;
+  }
+  h3 {
+    @apply text-xl font-bold;
+  }
+  h4 {
+    @apply text-base font-bold;
+  }
+  p,
+  ul {
+    @apply mb-2;
+  }
+  a {
+    @apply text-blue-600 underline;
+  }
+}
+
+@page {
+  size: A4;
+}
+
+@media print {
+  body {
+    width: 21cm;
+    height: 29.7cm;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+a {
+  color: unset;
+}
+
+.page {
+  background: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+li {
+  margin: 0;
+}
