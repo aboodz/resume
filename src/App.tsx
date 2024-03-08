@@ -7,9 +7,11 @@ import Education from './components/education';
 import Languages from './components/languages';
 import Interests from './components/interests';
 
+import './index.scss';
+
 function App() {
   return (
-    <main>
+    <main className="bg-white max-w-[800px] my-0 mx-auto">
       <header>
         <PersonalInfo />
       </header>

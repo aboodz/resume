@@ -5,13 +5,11 @@ const Languages = () => {
     <article>
       <h2>Languages</h2>
       <ul>
-        {resume.languages.map(({ language, fluency }) => {
-          return (
-            <li>
-              {language}: {fluency}
+        {resume.languages.map(({ language, fluency }) => (
+            <li key={language}>
+                {language}: {fluency}
             </li>
-          );
-        })}
+        ))}
       </ul>
     </article>
   );

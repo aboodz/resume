@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import resume from '../resume.json';
 import cvDateFormat from '../formatters/cv-date-format';
+import { companyImageMap } from './logos';
 
 type CompanyProps = (typeof resume)['work'][0];
 
@@ -48,12 +49,6 @@ const Company: FC<CompanyProps> = (props) => {
       </section>
     </article>
   );
-};
-
-export const companyImageMap: { [key: string]: string } = {
-  'Majid Al Futtaim': ' /mafh.png',
-  Mondia: '/mondia.svg',
-  'Fujitsu Consulting': '/fujitsu.png',
 };
 
 export default Company;

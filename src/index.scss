@@ -1,4 +1,7 @@
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
 @tailwind utilities;
+
 @tailwind components;
 @tailwind base;
 @layer base {
@@ -49,12 +52,6 @@ a {
   color: unset;
 }
 
-.page {
-  background: white;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
 hr {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -63,3 +60,4 @@ hr {
 li {
   margin: 0;
 }
+

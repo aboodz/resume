@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,9 @@
     <title>Abdalkarim - Resume</title>
   </head>
   <body>
-    <div id="root" class="bg-white max-w-[800px] my-0 mx-auto"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="app"><!--ssr-outlet--></div>
+    <script type="module" src="/src/csr.tsx">
+      <!-- csr -->
+    </script>
   </body>
 </html>

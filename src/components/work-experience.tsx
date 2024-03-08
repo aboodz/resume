@@ -5,7 +5,7 @@ const WorkExperienece = () => {
   return (
     <section>
       <h2>Work Experience</h2>
-      {resume.work.map((company) => (
+      {resume.work.slice(0, 3).map((company) => (
         <Company key={company.name} {...company} />
       ))}
     </section>

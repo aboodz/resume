@@ -7,7 +7,7 @@
     "email": "abd.akilan@hotmail.com",
     "phone": "",
     "website": "https://aboodz.github.io/",
-    "summary": "A product focused and detail-oriented software engineer with over seven years of hands-on experience building performant RESTful APIs and user-friendly web applications. I am a self-motivated and enthusiastic software engineer, specializing in fintech, who proactively participates in building and improving the software. Looking for an exciting opportunity to grow my career and expand my knowledge working in a technology-driven company.",
+    "summary": "I a product obssessed software engineer with over 10 years of hands-on experience building performant web applications. I have a strong passion for building scalable and maintainable software systems. I am a strong advocate for clean code, test-driven development, and agile methodologies. I am a polyglot programmer with a strong focus on Java and TypeScript.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -35,18 +35,29 @@
   },
   "work": [
     {
+      "name": "Careem Pay",
+      "position": "Senior Software Engineer II",
+      "website": "https://careem.com",
+      "location": "Dubai, United Arab Emirates",
+      "description": "Careem Pay is the leading fintech player",
+      "startDate": "2021-06-28",
+      "summary": "Built an online checkout that facilitates the payment process for merchants and customers.",
+      "highlights": [
+        "Built a checkout react application that",
+        "Created a react component library"
+      ]
+    },
+    {
       "name": "Majid Al Futtaim",
       "position": "Full-Stack Developer, Fintech",
       "website": "https://majidalfuttaim.com",
       "location": "Dubai, United Arab Emirates",
       "description": "Majid Al Futtaim is the leading shopping mall, communities, retail and leisure pioneer across the Middle East, Africa and Asia.",
       "startDate": "2018-12-04",
+      "endDate": "2021-06-25",
       "summary": "Working as part of the core team to build MAF Payments, a Payment Gateway, that processes and settle payments from customers to merchants",
       "highlights": [
         "Leading the development of an Angular based PG (payment gateway) portal that supports merchants and other internal users.",
-        "Building several backend components including a WebFlux BFF (backend for frontend) component, a Serverless API Gateway, and WebFlux authentication system.",
-        "Contributed in updating and migrating beam app components, a digital wallet application, and ensuring a smooth sunset plan.",
-        "Engaging in technical discussions with fellow developers and DevOps.",
         "Mentoring junior developer and new team recruits to continuously improve their technical skills."
       ]
     },
@@ -77,8 +88,7 @@
       "summary": "Worked as a freelancer before receiving bachelor’s degree. The project is to configure l10n and i18n for SAP Strategy Management.",
       "highlights": [
         "Added support for RTL layout for HTML pages and PDF reports.",
-        "Created a tool to auto translate thousands of labels from an excel sheet using Bing Translate API",
-        "Applied the styles guidelines to change the look and feel of the application."
+        "Created a tool to auto translate thousands of labels from an excel sheet using Bing Translate API"
       ]
     }
   ],
@@ -128,13 +138,11 @@
     {
       "name": "Others Technologies",
       "keywords": [
-        "ReactJS",
+        "Spring boot",
         "VueJS",
-        "stencilJS",
         "Hapi",
         "Serverless (AWS lambda)",
         "NestJS",
-        "expressJS",
         "gulp",
         "Bootstrap",
         "Redis",
@@ -144,28 +152,13 @@
       ]
     },
     {
-      "name": "Software Engineering Buzzwords",
-      "keywords": [
-        "Microservice Architecture",
-        "Reactive Programming",
-        "Object Oriented Programming",
-        "Functional Programming",
-        "Test Driven Development",
-        "Progressive Web Apps",
-        "Responsive Layouts",
-        "Internationalization and Localization",
-        "Domain Driven Design"
-      ]
-    },
-    {
       "name": "Programming Languages",
       "keywords": [
-        "Java",
         "TypeScript",
         "JavaScript",
+        "Java",
         "Kotlin",
         "Scala",
-        "Dart",
         "HTML5",
         "CSS",
         "SCSS",
@@ -173,21 +166,12 @@
       ]
     },
     {
-      "name": "Software Management Tools",
-      "keywords": [
-        "Attlasian Tools (JIRA, Confluence, bitbucket, Trello)",
-        "GitHub"
-      ]
-    },
-    {
       "name": "DevOps Tools",
-      "level": "basic",
-      "keywords": ["Jenkins", "Docker", "GitHub Actions", "AWS"]
+      "keywords": ["GitHub Actions", "Gitlab CI", "Docker", "Kubernetes", "AWS"]
     },
     {
       "name": "Worth Mentioning",
       "keywords": [
-        "Flutter",
         "Ionic",
         "ASP.NET MVC",
         "Portlet",
