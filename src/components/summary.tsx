@@ -1,4 +1,4 @@
-import resume from '../resume.json';
+import resume from '../resume-slim.json';
 
 const Summary = () => {
   const { summary } = resume.basics;

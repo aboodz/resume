@@ -1,0 +1,111 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Abdalkarim Akilan",
+    "label": "Software Engineer, Fintech",
+    "picture": "",
+    "email": "abd.akilan@hotmail.com",
+    "phone": "",
+    "website": "https://aboodz.github.io/",
+    "summary": "Product-obsessed software engineer with 10+ years building performant web applications. Strong advocate for clean code, TDD, and agile, with a polyglot focus on Java and TypeScript.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Dubai",
+      "countryCode": "AE",
+      "region": "Dubai"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "aboodz",
+        "url": "https://linkedin.com/in/aboodz"
+      },
+      {
+        "network": "GitHub",
+        "username": "aboodz",
+        "url": "https://github.com/aboodz"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Careem Pay",
+      "website": "https://careem.com",
+      "location": "Dubai, United Arab Emirates",
+      "description": "Careem Pay is the leading fintech player in the region.",
+      "positions": [
+        {
+          "position": "Staff Software Engineer I",
+          "startDate": "2024-06-01",
+          "summary": "Lead engineering across Careem Pay checkout and platform initiatives.",
+          "highlights": [
+            "Drove platform-wide reliability and DX improvements across multiple squads.",
+            "Owned architectural direction for the merchant checkout product."
+          ]
+        },
+        {
+          "position": "Senior Software Engineer II",
+          "startDate": "2023-01-01",
+          "endDate": "2024-05-31",
+          "highlights": [
+            "Built a checkout React application that processes payments for merchants and customers.",
+            "Created a shared React component library used across Pay surfaces."
+          ]
+        },
+        {
+          "position": "Senior Software Engineer I",
+          "startDate": "2021-06-28",
+          "endDate": "2022-12-31",
+          "highlights": [
+            "Delivered core checkout flows from zero to production."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Majid Al Futtaim",
+      "position": "Full-Stack Developer, Fintech",
+      "website": "https://majidalfuttaim.com",
+      "location": "Dubai, United Arab Emirates",
+      "description": "Leading retail and leisure pioneer across MEA and Asia.",
+      "startDate": "2018-12-04",
+      "endDate": "2021-06-25",
+      "summary": "Core team member building MAF Payments, a payment gateway processing and settling payments between customers and merchants.",
+      "highlights": [
+        "Led development of an Angular-based payment-gateway portal for merchants and internal users.",
+        "Mentored junior developers and new recruits to grow team technical capability."
+      ]
+    },
+    {
+      "name": "Mondia",
+      "position": "Full-Stack Developer",
+      "website": "https://mondia.com",
+      "location": "Dubai, United Arab Emirates",
+      "description": "VAS platforms for telecom operators.",
+      "startDate": "2014-04-13",
+      "endDate": "2018-11-01",
+      "summary": "Led development of digital entertainment portals with a focus on code quality, runtime performance, and operability.",
+      "highlights": [
+        "Migrated legacy JSP pages to a modern SPA/PWA, improving UX and performance.",
+        "Built a reusable Angular component base that cut new-product launch and maintenance time."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "American University of Sharjah | Sharjah, United Arab Emirates",
+      "url": "https://aus.edu",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science",
+      "startDate": "2010-01-01",
+      "endDate": "2014-01-25",
+      "gpa": "2.58",
+      "courses": []
+    }
+  ],
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "projects": []
+}

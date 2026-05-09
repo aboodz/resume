@@ -1,31 +1,19 @@
-import cvDateFormat from '../formatters/cv-date-format';
-import resume from '../resume.json';
+import resume from '../resume-slim.json';
 
 const Education = () => {
   return (
     <section>
       <h2>Education</h2>
-      {resume.education.map(
-        ({ studyType, area: major, endDate, institution, gpa }) => (
-              <article key={institution}>
-                  <header className="whitespace-nowrap">
-                      <h3>{institution.split('|')[0]}</h3>
-                      <span>{institution.split('|')[1]}</span>
-                  </header>
-                  <p>
-                      <em>
-                          {studyType} in {major}{' '}
-                          {parseFloat(gpa) > 3 ? `, with ${gpa}/4.00 GPA` : ''}
-                      </em>{' '}
-                      <br />
-                      <small>
-                          Graduated in {cvDateFormat(new Date(endDate))}
-                          <br />
-                      </small>
-                  </p>
-              </article>
-          )
-      )}
+      {resume.education.map(({ studyType, area, endDate, institution }) => {
+        const [school, place] = institution.split('|').map((s) => s.trim());
+        const year = new Date(endDate).getFullYear();
+        return (
+          <p key={institution} className="leading-snug mb-0">
+            <strong>{studyType}</strong> in {area} — {school}
+            {place ? `, ${place}` : ''} ({year})
+          </p>
+        );
+      })}
     </section>
   );
 };

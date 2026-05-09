@@ -1,14 +1,12 @@
 import { FC, Fragment } from 'react';
 
-import resume from '../resume.json';
+import resume from '../resume-slim.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   IconDefinition,
   faAt,
-  faMapMarkedAlt,
   faPhoneSquareAlt,
 } from '@fortawesome/free-solid-svg-icons';
-import localizeCountryCode from '../formatters/localize-country-code';
 import {
   faGithub,
   faLinkedin,
@@ -16,10 +14,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const PersonalInfo: FC = () => {
-  const { name, label, email, phone, location } = resume.basics;
-
-  const country = localizeCountryCode(location.countryCode);
-  const address = `${location.city}, ${country}`;
+  const { name, label, email, phone } = resume.basics;
 
   const profiles = extractProfiles(resume.basics.profiles);
 
@@ -28,6 +23,9 @@ const PersonalInfo: FC = () => {
       <hgroup className="flex-1">
         <h1>{name}</h1>
         <span>{label}</span>
+        <p className="text-sm text-gray-700 mb-0 leading-snug">
+          TypeScript · Java · React · Spring · AWS
+        </p>
       </hgroup>
       <address className="text-center leading-tight">
         {phone && (
@@ -38,10 +36,6 @@ const PersonalInfo: FC = () => {
             <br />
           </Fragment>
         )}
-        <a href={`http://maps.google.com/?q=${address}`}>
-          <FontAwesomeIcon icon={faMapMarkedAlt} /> {address}
-        </a>
-        <br />
         {email && (
           <Fragment>
             <a href={`mailto:${email}`}>
