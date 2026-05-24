@@ -5,7 +5,7 @@ import Education from './components/education';
 
 function App() {
   return (
-    <main className="bg-white max-w-[800px] my-0 mx-auto">
+    <main className="bg-white max-w-[720px] my-0 mx-auto px-4 sm:px-6 print:px-0">
       <header>
         <PersonalInfo />
       </header>

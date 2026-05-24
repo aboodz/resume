@@ -2,12 +2,12 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Abdalkarim Akilan",
-    "label": "Software Engineer, Fintech",
+    "label": "Staff Software Engineer",
     "picture": "",
     "email": "abd.akilan@hotmail.com",
     "phone": "",
     "website": "https://aboodz.github.io/",
-    "summary": "Product-obsessed software engineer with 10+ years building performant web applications. Strong advocate for clean code, TDD, and agile, with a polyglot focus on Java and TypeScript.",
+    "summary": "Staff engineer, 12+ years shipping web products and 7+ in fintech. Build platforms and B2B products end-to-end with React, TypeScript, and Node.js, with recent work taking LLM-powered tools to production.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -20,37 +20,32 @@
         "network": "LinkedIn",
         "username": "aboodz",
         "url": "https://linkedin.com/in/aboodz"
-      },
-      {
-        "network": "GitHub",
-        "username": "aboodz",
-        "url": "https://github.com/aboodz"
       }
     ]
   },
   "work": [
     {
-      "name": "Careem Pay",
+      "name": "Careem",
       "website": "https://careem.com",
       "location": "Dubai, United Arab Emirates",
       "description": "Careem Pay is the leading fintech player in the region.",
       "positions": [
         {
           "position": "Staff Software Engineer I",
-          "startDate": "2024-06-01",
-          "summary": "Lead engineering across Careem Pay checkout and platform initiatives.",
+          "startDate": "2025-09-01",
           "highlights": [
-            "Drove platform-wide reliability and DX improvements across multiple squads.",
-            "Owned architectural direction for the merchant checkout product."
+            "Drive AI-tooling adoption across a 500-person engineering org: produced weekly internal Claude Code videos and built Careem's internal Claude Code marketplace where engineers publish and share skills.",
+            "Embedded a natural-language assistant (OpenAI) inside the disbursement portal so partners can check balances, navigate, and execute payouts in chat.",
+            "Mentor 5+ engineers."
           ]
         },
         {
           "position": "Senior Software Engineer II",
           "startDate": "2023-01-01",
-          "endDate": "2024-05-31",
+          "endDate": "2025-08-31",
           "highlights": [
-            "Built a checkout React application that processes payments for merchants and customers.",
-            "Created a shared React component library used across Pay surfaces."
+            "Pioneered Super Portal, a microfrontend platform built on native import maps and Vite-plugin tooling, consolidating 25+ Careem web apps across 10+ teams. Serves ~3k daily users and cut new-app launch from weeks to days.",
+            "Designed and built the disbursement portal: a B2B payout product serving 20+ partner enterprises (multi-million GMV) with role-based multi-factor approval flows for payout batches."
           ]
         },
         {
@@ -58,7 +53,7 @@
           "startDate": "2021-06-28",
           "endDate": "2022-12-31",
           "highlights": [
-            "Delivered core checkout flows from zero to production."
+            "Shipped Careem Checkout 0 to 1: hosted web app, merchant SDK, and Shopify plugin for embedding payments into third-party surfaces."
           ]
         }
       ]
@@ -71,10 +66,10 @@
       "description": "Leading retail and leisure pioneer across MEA and Asia.",
       "startDate": "2018-12-04",
       "endDate": "2021-06-25",
-      "summary": "Core team member building MAF Payments, a payment gateway processing and settling payments between customers and merchants.",
+      "summary": "Built the merchant-facing portal for MAF Payments, the group's in-house payment gateway.",
       "highlights": [
-        "Led development of an Angular-based payment-gateway portal for merchants and internal users.",
-        "Mentored junior developers and new recruits to grow team technical capability."
+        "Owned end-to-end the merchant business portal for MAF Payments (Angular): admin and merchant tooling for the group's in-house payment gateway.",
+        "Designed the role and permission model spanning merchant users and internal administrators across the gateway's operational surfaces."
       ]
     },
     {
@@ -85,10 +80,10 @@
       "description": "VAS platforms for telecom operators.",
       "startDate": "2014-04-13",
       "endDate": "2018-11-01",
-      "summary": "Led development of digital entertainment portals with a focus on code quality, runtime performance, and operability.",
+      "summary": "Built VAS web portals deployed as carrier landing pages across du, Vodafone Egypt, Ooredoo, Omantel, and other regional operators.",
       "highlights": [
-        "Migrated legacy JSP pages to a modern SPA/PWA, improving UX and performance.",
-        "Built a reusable Angular component base that cut new-product launch and maintenance time."
+        "Proposed and led migration off legacy Liferay portlets to a modern Angular SPA backed by a headless CMS; became the framework new operator portals were built on.",
+        "Built and shipped carrier VAS portals and music products for du, Etisalat Egypt (music), Omantel, and Ooredoo, including an in-browser music player that headlined several launches."
       ]
     }
   ],
@@ -100,7 +95,6 @@
       "studyType": "Bachelor of Science",
       "startDate": "2010-01-01",
       "endDate": "2014-01-25",
-      "gpa": "2.58",
       "courses": []
     }
   ],

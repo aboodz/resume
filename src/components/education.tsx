@@ -1,4 +1,4 @@
-import resume from '../resume-slim.json';
+import resume from '../resume.json';
 
 const Education = () => {
   return (
@@ -8,10 +8,15 @@ const Education = () => {
         const [school, place] = institution.split('|').map((s) => s.trim());
         const year = new Date(endDate).getFullYear();
         return (
-          <p key={institution} className="leading-snug mb-0">
-            <strong>{studyType}</strong> in {area} — {school}
-            {place ? `, ${place}` : ''} ({year})
-          </p>
+          <article key={institution}>
+            <h3>
+              {studyType} in {area}
+            </h3>
+            <p className="text-sm leading-snug mb-0">
+              {school}
+              {place ? ` · ${place}` : ''} · {year}
+            </p>
+          </article>
         );
       })}
     </section>

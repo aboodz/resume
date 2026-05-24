@@ -25,24 +25,21 @@ type CompanyProps = {
 const formatRange = (startDate: string, endDate?: string) => {
   const start = cvDateFormat(new Date(startDate));
   const end = endDate ? cvDateFormat(new Date(endDate)) : 'Present';
-  return `${start} - ${end}`;
+  return `${start} – ${end}`;
 };
 
-const PositionBlock: FC<Position & { location: string }> = ({
+const PositionBlock: FC<Position> = ({
   position,
   startDate,
   endDate,
   highlights,
-  location,
 }) => (
-  <section className="flex flex-col ps-4 border-l-4 border-l-solid border-l-gray-400 mb-1">
+  <div className="flex flex-col ps-4 border-l-4 border-l-solid border-l-gray-400 mb-1">
     <header>
-      <hgroup>
-        <h4>{position}</h4>
-        <p className="text-sm leading-snug mb-0">
-          {formatRange(startDate, endDate)} · {location}
-        </p>
-      </hgroup>
+      <h4>{position}</h4>
+      <p className="text-xs leading-snug text-gray-600 mb-0">
+        {formatRange(startDate, endDate)}
+      </p>
     </header>
     {highlights && highlights.length > 0 && (
       <ul className="list-disc ps-4 leading-snug mb-1">
@@ -51,7 +48,7 @@ const PositionBlock: FC<Position & { location: string }> = ({
         ))}
       </ul>
     )}
-  </section>
+  </div>
 );
 
 const Company: FC<CompanyProps> = (props) => {
@@ -73,10 +70,14 @@ const Company: FC<CompanyProps> = (props) => {
 
   return (
     <article className="flex flex-col mb-2">
-      <header className="flex flex-row items-center justify-between">
-        <h3>{name}</h3>
+      <header className="flex flex-row items-center justify-between mb-2">
+        <hgroup>
+          <h3>{name}</h3>
+          <p className="text-sm text-gray-700 mb-0 leading-snug">{location}</p>
+        </hgroup>
         <a
           href={website.toString()}
+          aria-label={`${name} website`}
           className="flex items-center justify-end"
           style={{ height: 32, width: 110 }}
         >
@@ -85,16 +86,18 @@ const Company: FC<CompanyProps> = (props) => {
             alt={`${name} logo`}
             src={companyImageMap[name]}
             style={{
-              maxHeight: '100%',
+              height: '100%',
+              width: 'auto',
               maxWidth: '100%',
               objectFit: 'contain',
+              objectPosition: 'right center',
             }}
           />
         </a>
       </header>
 
       {positionList.map((p, i) => (
-        <PositionBlock key={i} {...p} location={location} />
+        <PositionBlock key={i} {...p} />
       ))}
     </article>
   );

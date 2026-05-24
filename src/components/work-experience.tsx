@@ -1,4 +1,4 @@
-import resume from '../resume-slim.json';
+import resume from '../resume.json';
 import Company from './company';
 
 const WorkExperienece = () => {
